@@ -1,0 +1,30 @@
+{
+  "name": "react-dropdown-menu",
+  "version": "0.0.1",
+  "description": "React dropdown menu",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --stats --progress",
+    "eslint": "eslint ./src --ext .js,.jsx"
+  },
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "repository": "tommy351/react-dropdown-menu",
+  "dependencies": {
+    "classnames": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.2",
+    "babel-eslint": "^3.1.1",
+    "babel-loader": "^5.1.0",
+    "eslint": "^0.21.0",
+    "eslint-loader": "^0.11.2",
+    "eslint-plugin-react": "^2.6.3",
+    "file-loader": "^0.8.4",
+    "minimist": "^1.1.1",
+    "node-libs-browser": "^0.5.2",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.5",
+    "webpack-dev-server": "^1.8.2"
+  }
+}

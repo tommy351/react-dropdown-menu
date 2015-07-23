@@ -50,10 +50,11 @@ class Dropdown extends React.Component {
       }
     });
 
-    return <div {...this.props}
-      ref="dropdown"
-      onClick={this.handleClick}
-      className={className}>{children}</div>;
+    return (
+      <div {...this.props} onClick={this.handleClick} className={className}>
+        {children}
+      </div>
+    );
   }
 
   handleClick(e){
@@ -83,22 +84,8 @@ class Dropdown extends React.Component {
     }
   }
 
-  getDOMNode() {
-    return React.findDOMNode(this.refs.dropdown);
-  }
-
   handleDocumentClick(e){
     if (!this.isActive()) return;
-
-    const dropdown = this.getDOMNode();
-    let element = e.target;
-
-    if (element === dropdown) return;
-
-    while (element){
-      if (element === dropdown) return;
-      element = element.parentNode;
-    }
 
     e.preventDefault();
     e.stopPropagation();
